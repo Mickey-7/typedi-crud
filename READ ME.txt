@@ -1,0 +1,43 @@
+reference : https://blog.logrocket.com/dependency-injection-node-js-typedi/#achieving-dependency-injection-containers
+
+-> Create Node project
+    D:\typedi>npm init -y
+    Wrote to D:\typedi\package.json:
+
+    {
+    "name": "typedi",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+    }
+
+-> Install typescript, @types/express, typedi & reflect-metadata
+    D:\typedi>npm i typescript @types/express
+    D:\typedi>npm install typedi reflect-metadata
+
+-> Create tsconfig.json
+    D:\typedi>npx tsc --init
+    Created a new tsconfig.json with:                                             TS
+    target: es2016
+    module: commonjs
+    strict: true
+    esModuleInterop: true
+    skipLibCheck: true
+    forceConsistentCasingInFileNames: true
+    You can learn more at https://aka.ms/tsconfig
+
+-> Install express & ts-node
+D:\typedi> npm install express ts-node
+    modify package.json - add start under scripts
+    "scripts": {
+        "start": "ts-node index.ts",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+
+test on postman http://localhost:3000/users
